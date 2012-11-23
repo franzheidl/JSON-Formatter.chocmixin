@@ -9,7 +9,7 @@ This Mixin is installable thourgh Chocolat/Actions/Install Mixins...
 
 ## Usage
 
-Select the whole JSON-Format an go Actions/JSON/Format Json and you're done.
+Select the whole JSON-Object an go to Actions/JSON/Format Json and you're done.
 
 ## Contributors
 
