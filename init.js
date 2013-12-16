@@ -5,8 +5,16 @@
  */
 
 Hooks.addMenuItem("Actions/JSON/Format JSON", "cmd-alt-ctrl-f", function() {
-	Recipe.run(function(r) {	
-		var wordrange = r.selection;
+	Recipe.run(function(r) {
+    var wordrange;
+  	 
+    if (r.selection.length > 0) {
+      wordrange = r.selection;
+    }
+    else {
+      wordrange = new Range(0, r.length);
+    }
+		
 		var myJsontxt = r.textInRange(wordrange);
 		
 		try {
